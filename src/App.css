@@ -1,4 +1,4 @@
-.main-heading{
+.title{
   align-items: center;
   background-color: beige;
   padding-left: 678px;
@@ -6,7 +6,7 @@
   padding-right: 695px;
 }
 
-.title-desc{
+.input-box{
   padding-right: 50px;
   background-color: lemonchiffon;
   padding-top: 10px;
@@ -15,7 +15,7 @@
   flex-direction: row;
 }
 
-.main-content{
+.user-input{
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 80px;
@@ -24,22 +24,16 @@
   flex-direction: column;
   }
 
-  .todo{
+  .list{
     background-color: antiquewhite;
     border-width: 10px;
     text-size-adjust: auto;
     width: 150px;
   }
 
-  .todo-x{
+  .delete{
     padding-top: 1px;
     padding-bottom: 1px;
     background-color: crimson;
   }
 
-  .todo-y{
-    width: 130px;
-    padding-top: 1px;
-    padding-bottom: 1px;
-    background-color: crimson;
-  }

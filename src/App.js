@@ -33,11 +33,11 @@ function Todoassignment() {
     <div>
 
       <div>
-        <h1 className = "main-heading"> Todo-List </h1>
+        <h1 className = "title"> Todo-List </h1>
       </div>
 
-      <div className = "title-desc">
-        <div className = "main-content">
+      <div className = "input-box">
+        <div className = "user-input">
           <label> Title </label>
           <input
             type = "text"
@@ -47,7 +47,7 @@ function Todoassignment() {
           />
         </div>
 
-        <div className = "main-content">
+        <div className = "user-input">
           <label> Description </label>
           <textarea
             type = "text"
@@ -57,7 +57,7 @@ function Todoassignment() {
           />
         </div>
 
-        <div className = "main-content">
+        <div className = "user-input">
           <label> Date </label>
           <input
             type = "date"
@@ -67,7 +67,7 @@ function Todoassignment() {
         </div>
 
         <div
-          className = "main-content"
+          className = "user-input"
           onChange = {(e) => setPriority(e.target.value)}
         >
           <label> Priority </label>
@@ -78,7 +78,7 @@ function Todoassignment() {
           </select>
         </div>
 
-        <button className = "first-button" onClick = {handleAddTodo}>
+        <button className = "adding" onClick = {handleAddTodo}>
           Add
         </button>
       </div>
@@ -86,12 +86,12 @@ function Todoassignment() {
       {allTodos.map(({ title, description, date, priority }, index) => {
         return (
           <div key = {index}>
-            <div className = "todo">
+            <div className = "list">
               <h3> {title} </h3>
               <p> {description} </p>
               <h3> {date} </h3>
               <h3> {priority} </h3>
-              <button className = "todo-y" onClick = {(e) => emptyit(index)}>
+              <button className = "delete" onClick = {(e) => emptyit(index)}>
                 x
               </button>
               <input type = "checkbox" />
