@@ -1,4 +1,45 @@
-.main-content{
+.main-heading{
+  align-items: center;
+  background-color: beige;
+  padding-left: 678px;
+  font-size: xx-large;
+  padding-right: 695px;
+}
+
+.title-desc{
+  padding-right: 50px;
+  background-color: lemonchiffon;
+  padding-top: 10px;
+  padding-bottom: 10px;
   display: flex;
   flex-direction: row;
 }
+
+.main-content{
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 80px;
+  padding-right: 80px;
+  display: flex;
+  flex-direction: column;
+  }
+
+  .todo{
+    background-color: antiquewhite;
+    border-width: 10px;
+    text-size-adjust: auto;
+    width: 150px;
+  }
+
+  .todo-x{
+    padding-top: 1px;
+    padding-bottom: 1px;
+    background-color: crimson;
+  }
+
+  .todo-y{
+    width: 130px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    background-color: crimson;
+  }
