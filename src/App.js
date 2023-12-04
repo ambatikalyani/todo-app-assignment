@@ -91,7 +91,7 @@ function Todoassignment() {
               <p> {description} </p>
               <h3> {date} </h3>
               <h3> {priority} </h3>
-              <button className = "delete" onClick = {(e) => emptyit(index)}>
+              <button className = "delete-icon" onClick = {(e) => emptyit(index)}>
                 x
               </button>
               <input type = "checkbox" />
