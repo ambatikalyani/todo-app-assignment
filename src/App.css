@@ -37,3 +37,51 @@
     background-color: crimson;
   }
 
+  .lists{
+    display: flex;
+    flex-direction: row;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .updates{
+    display: flex;
+   justify-content: space-around;
+   align-items: flex-start;
+   margin-top: 20px;
+    
+  }
+
+  .update{
+    display: flex;
+    flex-direction: column;
+    width: 31%;
+    height: 68vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .update1{
+    display: flex;
+    flex-direction: column;
+    padding-left: 50px;
+    padding-right: 50px;
+    width: 31%;
+    height: 68vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+
+  .update2{
+    display: flex;
+    flex-direction: column;
+    padding-left: 50px;
+    padding-right: 10px;
+    width: 31%;
+    height: 68vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+

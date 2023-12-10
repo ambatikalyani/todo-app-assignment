@@ -7,6 +7,7 @@ function Todoassignment() {
   const [newDescription, setNewDescription] = useState("");
   const [newDate, setNewDate] = useState("");
   const [newPriority, setPriority] = useState("");
+ 
 
   const handleAddTodo = () => {
     let newTodoItem = {
@@ -82,15 +83,20 @@ function Todoassignment() {
           Add
         </button>
       </div>
-
+     <div className="updates">
+      <div className = "update">
+        <h2> todo </h2>
+        
       {allTodos.map(({ title, description, date, priority }, index) => {
         return (
           <div key = {index}>
             <div className = "list">
+             
               <h3> {title} </h3>
               <p> {description} </p>
               <h3> {date} </h3>
               <h3> {priority} </h3>
+              
               <button className = "delete-icon" onClick = {(e) => emptyit(index)}>
                 x
               </button>
@@ -99,6 +105,32 @@ function Todoassignment() {
           </div>
         );
       })}
+        
+      </div>
+
+      <div className="update1">
+        <h2> inprogress</h2>
+        {allTodos.map((key, index) => {
+          return {
+           
+        
+          }
+        })}
+        <button className = "delete-icon" onClick = {(e) => emptyit(index)}>
+                x
+              </button>
+              <input type = "checkbox" />
+      </div>
+      
+      <div className="update2">
+        <h2> Completed </h2>
+        <button className = "delete-icon" onClick = {(e) => emptyit(index)}>
+                x
+              </button>
+              <input type = "checkbox" />
+      </div>
+    </div>
+
     </div>
   );
 }
